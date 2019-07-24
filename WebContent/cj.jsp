@@ -39,12 +39,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   				<tr>
   				<th><%=sg.getId()%></th>
   				<th><%=sg.getUsername()%></th>
-  				<th><%=sg.getScore()%></th>
+  				<th><%=sg.getTktscore()+sg.getXztscore()%></th>
   				<th><%=sg.getPapername()%></th><br>
   				
   				<!-- 此处设置了一个修改<a>标签,做修改操作.并将上面拿到的数据传给update.jsp,当进入修改页面的时候,原来的数据会显示 -->
   				<th><a href="update.jsp?name=<%=sg.getId()%>&author=<%=sg.getUsername()%>&
-  				&country=<%=sg.getScore()%>&price=<%=sg.getPapername()%>">修改</a> 
+  				&country=<%=sg.getTktscore()+sg.getXztscore()%>&price=<%=sg.getPapername()%>">修改</a> 
   				<!-- 删除操作,只把name字段传给Delete_Servlet.java,用来做删除操作 -->
   				<a href="<%=sg.getId()%>" onclick="confirm('确定删除该条记录?')">删除</a>
   				</th>

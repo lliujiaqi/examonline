@@ -17,7 +17,7 @@
     	  		<th></th>
     	  	</tr>
     	  	<!--从ShowAllPaper中获取c++试卷名-->
-    	  	<c:forEach items="${sessionScope.c++}" var="cp">
+    	  	<c:forEach items="${sessionScope.c}" var="cp">
     	  	<tr>
     	  		<td><a href="ShowAllPaper?action=select&pname=${paper.papername }">${cp.papername}</a></td>
     	  		<td>

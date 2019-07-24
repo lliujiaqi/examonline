@@ -56,7 +56,7 @@ SmartUpload su = new SmartUpload();
 		} catch (SmartUploadException e) {
 			e.printStackTrace();
 		}
-		String path1 = request.getServletContext().getRealPath("/")+"upload\\"+sf.getFileName();
+		String path1 = request.getServletPath()+"upload\\"+sf.getFileName();
 		
 //		SmartFile sf1 = sfs.getFile(1);
 //		try {

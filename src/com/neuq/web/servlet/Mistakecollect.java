@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import com.neuq.bean.Student;
 import com.neuq.service.I.MistakesInterfaceBiz;
 import com.neuq.service.Impl.MistakesInterfaceImplBiz;
-public class MistakeCollect extends HttpServlet {
+public class Mistakecollect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
    
-    public MistakeCollect() {
+    public Mistakecollect() {
         super();
 
     }

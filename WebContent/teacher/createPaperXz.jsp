@@ -14,7 +14,6 @@
 			<tr >
 				<td colspan="2" id="xz">一、选择题(请在以下选择题中选择10道)</td>
 			</tr>
-			<c:forEach items="${}" var="">
 			<tr>
 				<td colspan="2" id="xztitle">
 					<input type="checkbox" name="" id="" value="" />&nbsp;&nbsp;1.题目
@@ -52,7 +51,6 @@
 					正确答案：xxx
 				</td>
 			</tr>
-			</c:forEach>
 		</table>
  	</body>
 </html>

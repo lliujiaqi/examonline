@@ -27,10 +27,10 @@ import com.neuq.dao.Impl.TktInterfaceImplDao;
 import com.neuq.dao.Impl.XztInterfaceImplDao;
 
 
-public class InsertQuestion extends HttpServlet {
+public class Insertquestion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public InsertQuestion() {
+    public Insertquestion() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -118,7 +118,7 @@ System.out.println(question);
 		} catch (SmartUploadException e) {
 			e.printStackTrace();
 		}
-		String path = request.getServletContext().getRealPath("/");
+		String path = request.getServletPath();
 		System.out.println("文件上传成功！");
 		TeacherInterfaceDao teacherInterfaceDao = new TeacherInterfaceImplDao();
 		System.out.println("  1111   " + sf.getFileName()+"1111"+path);

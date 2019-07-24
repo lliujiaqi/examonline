@@ -18,7 +18,6 @@
 			</tr>
 			<tr>
 				<td class="bc_title">
-					1.${}
 				</td>
 			</tr>
 			<tr>

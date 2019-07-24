@@ -66,7 +66,7 @@ public class Upload extends HttpServlet {
 	System.out.println(msg );
 //		System.out.println(sf.getFilePathName());
 //		System.out.println(sf.getFileName());
-		String path = request.getServletContext().getRealPath("/");
+		String path = request.getServletPath();
 		System.out.println("文件上传成功！");
 		TeacherInterfaceDao teacherInterfaceDao = new TeacherInterfaceImplDao();
 		try {

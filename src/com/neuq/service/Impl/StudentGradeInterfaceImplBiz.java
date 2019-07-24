@@ -2,6 +2,7 @@ package com.neuq.service.Impl;
 
 import java.util.List;
 
+import com.neuq.bean.Student;
 import com.neuq.bean.StudentGrade;
 import com.neuq.dao.I.StudentGradeInterfaceDao;
 import com.neuq.dao.Impl.StudentGradeInterfaceImplDao;
@@ -9,10 +10,6 @@ import com.neuq.service.I.StudentGradeInterfaceBiz;
 
 public class StudentGradeInterfaceImplBiz implements StudentGradeInterfaceBiz {
 StudentGradeInterfaceDao sgi=new StudentGradeInterfaceImplDao();
-	@Override
-	public boolean insert(StudentGrade studentGrade) {
-		return sgi.insert(studentGrade);
-	}
 
 	@Override
 	public boolean delete(StudentGrade studentGrade) {
@@ -32,6 +29,12 @@ StudentGradeInterfaceDao sgi=new StudentGradeInterfaceImplDao();
 	@Override
 	public List<StudentGrade> select(String studentclass, String papername) {
 		return sgi.select(studentclass, papername);
+	}
+
+	@Override
+	public boolean insert(StudentGrade studentGrade) {
+		// TODO Auto-generated method stub
+		return sgi.insert(studentGrade);
 	}
 
 }

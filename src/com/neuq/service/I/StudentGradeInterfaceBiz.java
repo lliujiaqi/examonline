@@ -5,6 +5,7 @@ import java.util.List;
 import com.neuq.bean.StudentGrade;
 
 public interface StudentGradeInterfaceBiz {
+	
 public boolean insert(StudentGrade studentGrade);
 	
 	/**
